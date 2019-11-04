@@ -7,10 +7,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import itchat
-# 推送股价信息到手机
+
 
 
 def push_wechat(name, real_price, real_percent, type):
+    age=10
     name=u'wwwei'
     itchat.auto_login(hotReload=True)
     account=itchat.get_friends(name)
